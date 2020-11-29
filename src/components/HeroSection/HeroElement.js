@@ -88,9 +88,10 @@ export const HeroH1 = styled.div`
 `;
 
 export const HeroP = styled.p`
-    margin-top: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     color: #fff;
-    font-size: 24px;
+    font-size: 15px;
     text-align: center;
     max-width: 600px;
 

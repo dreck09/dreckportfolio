@@ -15,7 +15,7 @@ import {
     BtnWrap,
     ImgWrap,
     Img
-} from './InfoElements'
+} from './InfoElements';
 
 
 const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description,

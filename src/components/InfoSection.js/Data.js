@@ -7,13 +7,13 @@ export const homeObjOne = {
     lightBg: false,
     lightText: false,
     lightTextDesc: true,
-    topLine: 'Premium Bank',
-    headLine: 'unlimiten Transaction with zero fees',
-    description: ' Get accessto our exclusive that allowsyou send unli ransaction',
-    buttonLabel: 'get startted',
-    imgStart: true,
+    topLine: 'About Me',
+    headLine: 'lorem lorem lorem',
+    description: ' lorem lorem lorem lorem lorem lorem lorem lorem lorem',
+    buttonLabel: 'Contact Me',
+    imgStart: false,
     img: image2,
-    alt: 'fucking you',
+    alt: 'sdsadasd',
     dark: true,
     primary: true,
     darkText: false
@@ -40,7 +40,7 @@ export const homeObjtwo = {
 
 export const homeObjthree = {
     id: 'about',
-    lightBg: false,
+    lightBg: true,
     lightText: false,
     lightTextDesc: true,
     topLine: 'Premium Bank',
