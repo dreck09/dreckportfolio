@@ -1,5 +1,6 @@
-import React from 'react';
-import { FaBars, FaToggleOff } from 'react-icons/fa';
+import React, {useState, useEffect} from 'react';
+import { FaBars } from 'react-icons/fa';
+import {animateScroll as scroll }  from 'react-scroll';
 import { Nav, 
     NavbarContainer,
      NavLogo,
@@ -11,30 +12,55 @@ import { Nav,
     NavBtnLink} from './NavbarElement';
 
 const Navbar = ({ toggle }) => {
+
+    const [scrolNav, setScrolNav] = useState(false);
+
+    const changeNav = () => {
+        if(window.scrollY >= 80){
+            setScrolNav(true);
+        }else{
+            setScrolNav(false);
+        }
+    };
+
+useEffect(() => {
+    window.addEventListener('scroll', changeNav);
+}, []);
+
+const toggleHome = () => {
+    scroll.scrollToTop();
+}
     return (
       <>
-        <Nav>
+        <Nav scrolNav={scrolNav}>
             <NavbarContainer>
-                <NavLogo to='/'> dreck</NavLogo>
+                <NavLogo to='/' onClick={toggleHome}> dreck</NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="about">About</NavLinks>
+                            <NavLinks to="about" smooth={true} duration={500}
+                            spy={true} exact='true' offset={-80} 
+                            >About</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="contact">Contact</NavLinks>
+                            <NavLinks to="skills" smooth={true} duration={500}
+                            spy={true} exact='true' offset={-80} >Skills</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="project">Projects</NavLinks>
+                            <NavLinks to="portfolio" smooth={true} duration={500}
+                            spy={true} exact='true' offset={-80} >Portfolio</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="signup">Sign Up</NavLinks>
+                            <NavLinks to="contact" smooth={true} duration={500}
+                            spy={true} exact='true' offset={-80} >Contact</NavLinks>
                         </NavItem>
+                        
+                        
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="/messageme">
+                        <NavBtnLink to="/">
                             Message Me
                         </NavBtnLink>
                     </NavBtn>

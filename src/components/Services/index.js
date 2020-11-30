@@ -7,28 +7,28 @@ import {ServicesContainer, ServicesCard, ServicesH1, ServicesH2, ServicesWrapper
 
 const Services = () => {
     return (
-       <ServicesContainer id='services'>
-           <ServicesH1>My Projects</ServicesH1>
+       <ServicesContainer id='portfolio'>
+           <ServicesH1>My Work</ServicesH1>
             <ServicesWrapper>
                 <ServicesCard>
                     <ServicesIcon src={Icon1}/>
-                    <ServicesH2> Not Available</ServicesH2>
-                    <ServicesP> </ServicesP>
+                    <ServicesH2> Web-base system</ServicesH2>
+                    <ServicesP> Sorry not available.</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon1}/>
-                    <ServicesH2> Not Available</ServicesH2>
-                    <ServicesP></ServicesP>
+                    <ServicesH2> Web-base system</ServicesH2>
+                    <ServicesP> Sorry not available.</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon1}/>
-                    <ServicesH2>  Not Available</ServicesH2>
-                    <ServicesP></ServicesP>
+                    <ServicesH2>  Web-base system</ServicesH2>
+                    <ServicesP> Sorry not available.</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon1}/>
-                    <ServicesH2> Not Available </ServicesH2>
-                    <ServicesP></ServicesP>
+                    <ServicesH2> Web-base system </ServicesH2>
+                    <ServicesP> Sorry not available.</ServicesP>
                 </ServicesCard>
             </ServicesWrapper>
        </ServicesContainer>

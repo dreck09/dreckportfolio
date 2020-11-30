@@ -5,14 +5,14 @@ export const InfoContainer = styled.div`
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
 
     @media screen and(max-width: 768px){
-        padding: 100px 0;
+        padding: 50px 0;
     }
 `;
 
 export const  InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height:860px;
+    height:900px;
     width: 100%;
     max-width:1100px;
     margin-right: auto;
@@ -50,8 +50,8 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    color: #01bf71;
-    font-size: 16px;
+    color: #2EB8B8;
+    font-size: 30px;
     line-height:16px;
     font-weight: 700;
     letter-spacing: 1.4px;

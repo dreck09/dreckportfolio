@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
+import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection.js';
-import { homeObjOne, homeObjthree, homeObjtwo } from '../components/InfoSection.js/Data';
+import { homeObjOne, homeObjtwo,  homeObjFour } from '../components/InfoSection.js/Data';
 import Navbar from '../components/Navbar';
 import Services from '../components/Services';
 import Sidebar from '../components/Sidebar';
@@ -19,9 +20,12 @@ const Home = () => {
             <Navbar toggle={toggle} />
             <HeroSection />
             <InfoSection {...homeObjOne}/>
-            <InfoSection {...homeObjtwo}/>
+            <InfoSection {...homeObjFour}/>
+            
             <Services />
-            <InfoSection {...homeObjthree}/>
+            <InfoSection {...homeObjtwo}/>
+            
+            <Footer />
         </>
     );
 };
